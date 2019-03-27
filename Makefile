@@ -14,10 +14,10 @@ NAME = libft.a
 HDIR = $(wildcard *.h)
 all: $(NAME)
 $(NAME):
-	gcc -c $(HDIR) $(SRC) -Werror -Wall -Wextra *.c
+	gcc -c $(SRC) -Werror -Wall -Wextra *.c
 	ar rc $(NAME) *.o
 clean :
-	rm -f *.o *.h.gch
+	rm -f *.o
 fclean : clean
 	rm -rf $(NAME)
 re : fclean all
