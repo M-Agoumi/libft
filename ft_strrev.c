@@ -26,5 +26,6 @@ char    *ft_strrev(const char *str)
 		rev[i] = str[len - i - 1];
 		i++;
 	}
+	rev[i] = '\0';
 	return (rev);
 }
